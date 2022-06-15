@@ -86,10 +86,11 @@ nav.top a.link {
 }
 
 nav.top a.link:hover {
-    animation-name: navbar-link-underline;
-    animation-duration: 1s;
     color: purple;
     border-bottom: orange solid;
+    animation-name: navbar-link-underline;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 nav.top a:not(.link):hover {
