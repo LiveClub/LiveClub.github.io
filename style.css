@@ -1,0 +1,64 @@
+/* https://github.com/FLAK-ZOSO/FLAK-ZOSO.github.io/blob/main/src/css/code.css */
+.square {
+    background-color: black;
+    font-size: larger;
+    border-radius: 5px;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+}
+
+
+body {
+    background-color: purple;
+}
+
+
+p, h1 {
+    color: red;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+nav.top {
+    position: fixed; /* Position fixed, the <nav> remains on top even after scrolling */
+    top: 0; /* Stay fixed on top */
+    left: 0; /* Stay on left side */
+    width: 100vw; /* Cover the whole screen */
+    background-color: gray;
+    z-index: 1; /* Stay on top */
+    text-align: center;
+}
+nav.top a {
+    padding: 5%;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+
+div.intro {
+    width: 90%;
+    height: max-content;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    justify-content: center;
+    align-content: center;
+    border-color: black;
+    background-color: rgb(49, 49, 49);
+    border-top-left-radius: 30px 30px;
+    border-top-right-radius: 30px 30px;
+    border-bottom-left-radius: 30px 30px;
+    border-bottom-right-radius: 30px 30px;
+}
+div.intro#intro {
+    margin-top: 30px;
+}
