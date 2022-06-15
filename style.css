@@ -52,17 +52,17 @@ h1 {
 
 
 nav.top {
-    position: fixed;
     /* Position fixed, the <nav> remains on top even after scrolling */
-    top: 0;
+    position: fixed;
     /* Stay fixed on top */
-    left: 0;
+    top: 0;
     /* Stay on left side */
-    width: 86vw;
+    left: 0;
     /* Cover the whole screen */
+    width: 86vw;
     background-color: rgb(142, 176, 188);
-    z-index: 1;
     /* Stay on top */
+    z-index: 1;
     /* text-align: left; */
     margin-left: 4%;
     margin-right: 10%;
