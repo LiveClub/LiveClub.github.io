@@ -25,6 +25,12 @@ p, h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@keyframes navbarAnimation{
+    0%  { color: red;}
+    50%  {color:purple;}
+    100% {color:red; }
+}
+
 
 nav.top {
     position: fixed; /* Position fixed, the <nav> remains on top even after scrolling */
