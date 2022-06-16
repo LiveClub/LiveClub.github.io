@@ -42,11 +42,11 @@ h1 {
 
 @keyframes navbar-link-underline {
     0% {
-        border-bottom-color: transparent;
+        border-bottom-color: orange;
     }
 
     100% {
-        border-bottom-color: orange;
+        border-bottom-color: yellow;
     }
 }
 
@@ -60,7 +60,7 @@ nav.top {
     left: 0;
     /* Cover the whole screen */
     width: 86vw;
-    background-color: rgb(142, 176, 188);
+    background-color: gray;
     /* Stay on top */
     z-index: 1;
     /* text-align: left; */
@@ -79,13 +79,13 @@ nav.top a {
     color: white;
 }
 
-nav.top a:not(.link) {
+nav.top a.name-title {
     animation-name: navbar-title;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
 
-nav.top a:not(.link):hover {
+nav.top a.name-title:hover {
     border-radius: 10px;
     background-color: beige;
 }
@@ -100,7 +100,7 @@ nav.top a.link:hover {
     color: purple;
     border-bottom-style: solid;
     animation-name: navbar-link-underline;
-    animation-duration: 0.25s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 
