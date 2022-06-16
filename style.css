@@ -15,7 +15,8 @@ body {
 }
 
 
-p, h1 {
+p,
+h1 {
     color: red;
     justify-self: center;
     align-self: center;
@@ -25,20 +26,43 @@ p, h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@keyframes navbarAnimation{
-    0%  { color: red;}
-    50%  {color:purple;}
-    100% {color:red; }
+@keyframes navbar-title {
+    0% {
+        color: red;
+    }
+
+    50% {
+        color: purple;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+@keyframes navbar-link-underline {
+    0% {
+        border-bottom-color: orange;
+    }
+
+    100% {
+        border-bottom-color: yellow;
+    }
 }
 
 
 nav.top {
-    position: fixed; /* Position fixed, the <nav> remains on top even after scrolling */
-    top: 0; /* Stay fixed on top */
-    /* left: 0; /* Stay on left side */
-    width: 86vw; /* Cover the whole screen */
-    background-color: gray;
-    z-index: 1; /* Stay on top */
+    /* Position fixed, the <nav> remains on top even after scrolling */
+    position: fixed;
+    /* Stay fixed on top */
+    top: 0;
+    /* Stay on left side */
+    left: 0;
+    /* Cover the whole screen */
+    width: 86vw;
+    background-color: rgb(142, 176, 188);
+    /* Stay on top */
+    z-index: 1;
     /* text-align: left; */
     margin-left: 4%;
     margin-right: 10%;
@@ -47,21 +71,28 @@ nav.top {
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
 }
+
 nav.top a {
     /* padding: 5%; padding breaks nav.top a:hover border-bottom */
     text-decoration: none;
     font-size: 30px;
     color: white;
 }
+
 nav.top a.link {
     float: right;
     margin-left: 5%;
     padding-right: 0px;
 }
+
 nav.top a.link:hover {
     color: purple;
     border-bottom: orange solid;
+    animation-name: navbar-link-underline;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
+
 nav.top a:not(.link):hover {
     border-radius: 10px;
     background-color: beige;
@@ -84,9 +115,11 @@ div.intro {
     border-bottom-left-radius: 30px 30px;
     border-bottom-right-radius: 30px 30px;
 }
+
 div.intro#intro {
     margin-top: 50px;
 }
+
 nav.top img {
     border-radius: 10px;
     width: 30px;
