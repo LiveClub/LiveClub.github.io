@@ -42,11 +42,11 @@ h1 {
 
 @keyframes navbar-link-underline {
     0% {
-        border-bottom-color: orange;
+        border-bottom-color: transparent;
     }
 
     100% {
-        border-bottom-color: yellow;
+        border-bottom-color: orange;
     }
 }
 
@@ -79,6 +79,17 @@ nav.top a {
     color: white;
 }
 
+nav.top a:not(.link) {
+    animation-name: navbar-title;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+nav.top a:not(.link):hover {
+    border-radius: 10px;
+    background-color: beige;
+}
+
 nav.top a.link {
     float: right;
     margin-left: 5%;
@@ -87,15 +98,10 @@ nav.top a.link {
 
 nav.top a.link:hover {
     color: purple;
-    border-bottom: orange solid;
+    border-bottom-style: solid;
     animation-name: navbar-link-underline;
-    animation-duration: 1s;
+    animation-duration: 0.25s;
     animation-fill-mode: forwards;
-}
-
-nav.top a:not(.link):hover {
-    border-radius: 10px;
-    background-color: beige;
 }
 
 
