@@ -14,6 +14,9 @@
     padding-bottom: 1px;
 }
 
+body {
+    margin: 0;
+}
 
 html {
     /* https://stackoverflow.com/questions/17756649/disable-the-horizontal-scroll */
