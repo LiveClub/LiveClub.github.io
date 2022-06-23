@@ -16,6 +16,8 @@
 
 
 html {
+    /* https://stackoverflow.com/questions/17756649/disable-the-horizontal-scroll */
+    overflow-x: hidden;
     background-color: white;
 }
 
@@ -154,4 +156,12 @@ section.nav-wrapper {
     position: fixed;
     margin-bottom: 0;
     background-color: lightgray;
+}
+
+footer.bottom {
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(46, 43, 43);
+    position: fixed;
 }
