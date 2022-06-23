@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap');
+
 :root {
     --nav-height: 50px;
 }
@@ -32,7 +34,7 @@ p, h1 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
