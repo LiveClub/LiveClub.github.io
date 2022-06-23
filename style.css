@@ -1,3 +1,8 @@
+:root {
+    --nav-height: 50px;
+}
+
+
 /* https://github.com/FLAK-ZOSO/FLAK-ZOSO.github.io/blob/main/src/css/code.css */
 .square {
     background-color: black;
@@ -11,12 +16,11 @@
 
 
 html {
-    background-color: purple;
+    background-color: white;
 }
 
 
-p,
-h1 {
+p, h1 {
     color: red;
     justify-self: center;
     align-self: center;
@@ -24,6 +28,10 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: xx-large;
 }
 
 @keyframes navbar-title {
@@ -61,6 +69,7 @@ nav.top {
     /* Cover the whole screen */
     width: 86vw;
     background-color: gray;
+    opacity: 0.7;
     /* Stay on top */
     z-index: 1;
     /* text-align: left; */
@@ -70,6 +79,8 @@ nav.top {
     padding-right: 2%;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    
+    height: var(--nav-height);
 }
 
 nav.top a {
@@ -83,11 +94,6 @@ nav.top a.name-title {
     animation-name: navbar-title;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-}
-
-nav.top a.name-title:hover {
-    border-radius: 10px;
-    background-color: beige;
 }
 
 nav.top a.link {
@@ -104,6 +110,10 @@ nav.top a.link:hover {
     animation-fill-mode: forwards;
 }
 
+nav.top img {
+    border-radius: 10px;
+    width: 30px;
+}
 
 div.intro {
     width: 90%;
@@ -126,7 +136,22 @@ div.intro#intro {
     margin-top: 50px;
 }
 
-nav.top img {
-    border-radius: 10px;
-    width: 30px;
+section.intro {
+    margin-top: var(--nav-height);
+    height: fit-content;
+    padding: 2px;
+    width: 100vw;
+    right: 0;
+    left: 0;
+    background-color: black;
+}
+
+section.nav-wrapper {
+    height: var(--nav-height);
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position: fixed;
+    margin-bottom: 0;
+    background-color: lightgray;
 }
