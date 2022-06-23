@@ -177,8 +177,8 @@ footer.bottom {
 
 section.center {
     width: 80%;
-    height: 400px;
-    padding-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 0;
