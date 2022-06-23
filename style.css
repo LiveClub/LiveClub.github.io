@@ -89,7 +89,10 @@ nav.top {
     
     height: var(--nav-height);
 }
-
+nav.top p {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
+}
 nav.top a {
     /* padding: 5%; padding breaks nav.top a:hover border-bottom */
     text-decoration: none;
@@ -143,16 +146,6 @@ div.intro#intro {
     margin-top: 50px;
 }
 
-section.intro {
-    margin-top: var(--nav-height);
-    height: fit-content;
-    padding: 2px;
-    width: 100vw;
-    right: 0;
-    left: 0;
-    background-color: black;
-}
-
 section.nav-wrapper {
     height: var(--nav-height);
     width: 100vw;
@@ -163,10 +156,35 @@ section.nav-wrapper {
     background-color: lightgray;
 }
 
+section.intro {
+    margin-top: var(--nav-height);
+    margin-bottom: 0;
+    height: fit-content;
+    padding: 2px;
+    width: 100vw;
+    right: 0;
+    left: 0;
+    background-color: black;
+}
+
 footer.bottom {
     width: 100vw;
     bottom: 0;
     left: 0;
-    background-color: rgb(46, 43, 43);
+    background-color: rgb(42, 42, 42);
     position: fixed;
+}
+
+section.center {
+    width: 80%;
+    height: 400px;
+    padding-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: beige;
+}
+section.center h1 {
+    margin-top: 0;
 }
